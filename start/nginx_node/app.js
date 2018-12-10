@@ -10,7 +10,7 @@ var server1 = http.createServer(function(req, res) {
 }).listen(3000, "127.0.0.1");
 
 
-var server2 = http.createServer(funciton (req, res) {
+var server2 = http.createServer(function (req, res) {
     console.log("Request for: " + req.url + "-- port 3001");
     res.writeHead(200, {'Content-Type': 'text/plain'});
     res.end('Hello Node.js \n');
